@@ -1,10 +1,1 @@
-how to run:
-
-init:
-  установить node.js (6.0.0+)
-Выкачать пакеты. Запустить команду ниже в src/main
-  npm install
-Чтобы сбилдить:
-  npm run build:prod
-Чтобы открыть по адресу http://localhost:3000/ :
-  npm run front
+node server.js > /dev/null 2>&1 &
