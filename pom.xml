@@ -1,0 +1,73 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>ru.deltasolutions.cloud</groupId>
+        <artifactId>catalog-parent</artifactId>
+        <version>1.14.1-SNAPSHOT</version>
+    </parent>
+    <artifactId>cloud-catalog-gui</artifactId>
+    <packaging>war</packaging>
+
+    <properties>
+        <build-depth>../../</build-depth>
+        <build-group>gui/bo</build-group>
+        <build-action>war</build-action>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>ru.deltasolutions.cloud</groupId>
+            <artifactId>cloud-catalog-gui-proxy</artifactId>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.github.eirslett</groupId>
+                <artifactId>frontend-maven-plugin</artifactId>
+                <version>${frontend.maven.plugin.version}</version>
+                <configuration>
+                    <nodeVersion>${catalog.gui.node.version}</nodeVersion>
+                    <npmVersion>${catalog.gui.npm.version}</npmVersion>
+                    <installDirectory>target</installDirectory>
+                    <workingDirectory>${basedir}</workingDirectory>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>install node and npm</id>
+                        <goals>
+                            <goal>install-node-and-npm</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>npm install</id>
+                        <goals>
+                            <goal>npm</goal>
+                        </goals>
+                        <configuration>
+                            <arguments>install</arguments>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>npm run build</id>
+                        <goals>
+                            <goal>npm</goal>
+                        </goals>
+                        <configuration>
+                            <arguments>run build:prod</arguments>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>${maven.war.plugin.version}</version>
+                <configuration>
+                    <packagingExcludes>typescript/,typings/</packagingExcludes>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

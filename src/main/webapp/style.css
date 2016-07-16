@@ -1,0 +1,144 @@
+#layout-topbar {
+    background-color: #999;
+}
+
+#logo {
+    background-color: #777;
+    border-right: solid 1px #ccc;
+}
+
+.ui-datatable .ui-datagrid-header, .ui-datatable .ui-datatable-header, .ui-datatable .ui-datatable-caption,
+.ui-datatable .ui-datatable-subtable-header, .ui-datatable .ui-datatable-summaryrow {
+    background-color: #777;
+}
+
+.ui-datatable table thead tr th, .ui-datatable table tfoot tr td, .ui-datatable table thead tr th {
+    color: #555;
+    background-color: #ddd;
+    border: solid 1px #ccc;
+}
+
+.ui-datatable table tbody .ui-state-hover > td {
+    background-color: #ccc;
+}
+
+.ui-datatable table tbody tr td {
+    color: #666;
+    border: solid 1px #ddd;
+}
+
+.ui-datatable .ui-datatable-odd {
+    background-color: #ddd;
+}
+
+.ui-paginator {
+    margin: 0px;
+    padding: 0px !important;
+    background-color: #777;
+    border-radius: 1px;
+}
+
+.loginbodyblue {
+    background-color: #666;
+    border-top: solid 10px #666;
+}
+
+#top-menu > li > a {
+    color: white;
+}
+
+.WhiteBlue {
+    color: white;
+}
+
+#top-menu > li > a:hover, #top-menu li a:focus {
+    background-color: #888;
+}
+
+.ui-datatable table thead tr th.ui-state-active, .ui-datatable .ui-datatable-sticky table thead tr th.ui-state-active {
+    background-color: #ccc;
+}
+
+.ui-datatable table thead tr th.ui-state-hover, .ui-datatable .ui-datatable-sticky table thead tr th.ui-state-hover {
+    background-color: #ccc;
+}
+
+.ui-datatable table tbody .ui-state-highlight > td {
+    background-color: #999;
+}
+
+.ui-paginator .ui-paginator-first, .ui-paginator .ui-paginator-prev, .ui-paginator .ui-paginator-pages
+.ui-paginator-page, .ui-paginator .ui-paginator-next, .ui-paginator .ui-paginator-last, .ui-paginator
+.ui-paginator-rpp-options {
+    color: white;
+}
+
+.loader-parent {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: auto;
+}
+
+.loader-block {
+    width: 260px;
+    height: 260px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -64px 0 0 -64px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: none;
+}
+
+.ui-messages .ui-messages-close {
+    color: #03a9f4 !important;
+}
+
+.ui-dropdown, .ui-multiselect {
+    width: 50% !important;
+}
+
+.bordered {
+    border: solid 1px #e0e0e0;
+    padding: 10px;
+}
+
+.dark-border {
+    border-color: #ccc;
+    border-width: 3pt;
+    border-style: dashed;
+}
+
+.grayBlue {
+    background-color: #ccc !important;
+}
+
+.blue {
+    background-color: #777;
+}
+
+.table-header-padding {
+    padding: 15px 10px !important;
+}
+
+.ui-button-icon-only .fa {
+    top: 21px !important;
+    left: 19px !important;
+}
+
+#show-top-menu {
+    color: #ccc;
+}
+
+#mobile-menu-button {
+    background-color:#909090;
+}
